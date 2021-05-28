@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLA05</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="section-header">
+                <h2>Alta Usuaris</h2>
+            </div>
+            <div class="section-body">
+                <form id="alta-profesor" name="alta-profesor">
+                    <div class="form-body">
+                        <div>
+                            <label for="firstName">Nom: </label>
+                            <input id="firstName" name="firstName" type="text" required>
+                        </div>
+
+                        <div>
+                            <label for="user">Usuari: </label>
+                            <input id="user" name="user" type="text" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email: </label>
+                            <input id="email" name="email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required>
+                        </div>
+
+                        <div>
+                            <label for="password">Password: </label>
+                            <input id="password" name="password" type="password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-footer">
+                        <input id="submit" type="submit" value="Alta">
+                        <a href="/">Enrere</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/alta-profesor.js"></script>
+</body>
+
+</html>

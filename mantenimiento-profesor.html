@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLA06</title>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="mantenim-page">
+    <header></header>
+
+    <main>
+      <section>
+        <div class="section-header">
+          <h2>Manteniment Professors</h2>
+        </div>
+        <div class="section-body">
+          <div class="column scrollable">
+            <table class="table"></table>
+          </div>
+          <div class="column form">
+            <form id="manteniment-profesor" name="manteniment-profesor">
+              <div class="form-body">
+                <label for="firstName">Nom: </label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  placeholder="Nom i Cognoms"
+                  required
+                />
+
+                <label for="user">Usuari: </label>
+                <input
+                  id="user"
+                  name="user"
+                  type="text"
+                  placeholder="Nom d'Usuari"
+                  required
+                />
+
+                <label for="email">Email: </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                  placeholder="Adreça de email"
+                  required
+                />
+
+                <label for="type">Tipus Usuari: </label>
+                <select name="type" id="type">
+                  <option value="AD">Administrador</option>
+                  <option value="TC">Formador</option>
+                </select>
+
+                <label for="center">Escola: </label>
+                <select name="center" id="center"></select>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="section-footer">
+          <div class="footer-buttons">
+            <input
+              class="alta-formador"
+              id="submit"
+              type="submit"
+              value="Alta Formador"
+              form="manteniment-profesor"
+            />
+            <input
+              class="modificar-formador"
+              id="submit"
+              type="submit"
+              value="Modificar Formador"
+              form="manteniment-profesor"
+              disabled
+            />
+            <input
+              class="baixa-formador"
+              id="submit"
+              type="submit"
+              value="Baixa Formador"
+              form="manteniment-profesor"
+              disabled
+            />
+          </div>
+          <a href="/">Enrere</a>
+        </div>
+      </section>
+    </main>
+    <script src="js/mantenimiento-profesor.js"></script>
+  </body>
+</html>

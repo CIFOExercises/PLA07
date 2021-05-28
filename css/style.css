@@ -1,0 +1,203 @@
+/** GENERAL **/
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+input:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5;
+  filter: grayscale(100);
+}
+
+/** UTILS **/
+
+.link-border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+/** HEADER **/
+
+header {
+  background-color: #ffaa00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid #a587a6;
+  text-transform: uppercase;
+  height: 80px;
+}
+
+/** MAIN **/
+
+main {
+  background-color: #e6db9a;
+  display: flex;
+  justify-content: space-around;
+  min-height: calc(100% - 80px);
+  padding-top: 50px;
+}
+
+/** SECTION **/
+
+section {
+  background-color: #27f4bd;
+  width: calc(100vw / 3);
+  /* min-width: 400px; */
+  height: fit-content;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 13px 0px #6b6b6b;
+  box-shadow: 4px 4px 13px 0px #6b6b6b;
+}
+
+.section-header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.section-body {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.info-icon {
+  width: 30px;
+}
+
+.section-body > div {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/** FORM **/
+
+.form-body {
+  margin-bottom: 200px;
+}
+
+.form-body > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 15px auto;
+  width: 60%;
+  align-items: center;
+}
+
+.form-footer,
+.section-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-footer input[type="submit"],
+.form-footer a,
+.section-footer input[type="submit"],
+.section-footer a {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form-footer a,
+.section-footer a {
+  background-color: #ffaa00;
+}
+
+/** MANTENIMIENTO PROFESOR **/
+
+.mantenim-page section {
+  width: 75%;
+}
+
+.mantenim-page .section-body {
+  display: flex;
+  gap: 20px;
+}
+
+.mantenim-page .section-body .column {
+  flex: 50%;
+  align-items: flex-start;
+}
+
+.column.scrollable {
+  height: 500px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
+}
+
+.section-footer {
+  padding: 0 20px 20px 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td {
+  padding: 2px 5px;
+}
+
+.column.form {
+  justify-content: center;
+}
+
+#manteniment-profesor {
+  width: 40%;
+}
+
+#manteniment-profesor input:not(label[for="center"], label[for="type"]) {
+  display: block;
+  margin: 10px 0;
+}
+
+select {
+  margin: 10px 0;
+  width: 150px;
+}
+
+.modificar-formador {
+  background-color: blue !important;
+}
+
+.baixa-formador {
+  background-color: red !important;
+}
