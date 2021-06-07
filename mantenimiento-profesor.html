@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PLA06</title>
+    <title>Manteniment Professors</title>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 </head>
@@ -33,13 +33,15 @@
                             <input id="user" name="user" type="text" placeholder="Nom d'Usuari" required />
 
                             <label for="email">Email: </label>
-                            <input id="email" name="email" type="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="Adreça de email" required />
+                            <input id="email" name="email" type="email"
+                                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" placeholder="Adreça de email"
+                                required />
 
                             <label for="type">Tipus Usuari: </label>
                             <select name="type" id="type">
-                  <option value="AD">Administrador</option>
-                  <option value="TC">Formador</option>
-                </select>
+                                <option value="AD">Administrador</option>
+                                <option value="TC">Formador</option>
+                            </select>
 
                             <label for="center">Escola: </label>
                             <select name="center" id="center"></select>
@@ -49,9 +51,12 @@
             </div>
             <div class="section-footer">
                 <div class="footer-buttons">
-                    <input class="alta-formador" id="submit" type="submit" value="Nou Formador" form="manteniment-profesor" />
-                    <input class="modificar-formador" id="submit" type="submit" value="Modificar Formador" form="manteniment-profesor" disabled />
-                    <input class="baixa-formador" id="submit" type="submit" value="Baixa Formador" form="manteniment-profesor" disabled />
+                    <input class="alta-formador" name="alta-formador" id="submit" type="submit" value="Nou Formador"
+                        form="manteniment-profesor" />
+                    <input class="modificar-formador" name="modificar-formador" id="submit" type="submit" value="Modificar Formador"
+                        form="manteniment-profesor" disabled />
+                    <input class="baixa-formador" name="baixa-formador" id="submit" type="submit" value="Baixa Formador"
+                        form="manteniment-profesor" disabled />
                 </div>
                 <a href="/">Enrere</a>
             </div>
